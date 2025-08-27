@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(to right, #0f62fe, #0043ce);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.banner .logo img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.banner button {
+  background-color: white;
+  color: #0f62fe;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.banner button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Conteúdo do curso */
+#course-content {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: white;
+}
+
+#course-content h2 {
+  font-size: 2rem;
+  color: #0f62fe;
+  margin-bottom: 1rem;
+}
+
+#course-content p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.modules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.module {
+  background-color: #e8f0fe;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.module span {
+  color: #0043ce;
+  font-weight: bold;
+}
+
+/* Seção TRANSFORME O MUNDO */
+#transform-world {
+  background: url('assets/images/background.png') no-repeat center center;
+  background-size: cover;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Desafios profissionais */
+#professional-challenges {
+  padding: 4rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+#professional-challenges h2 {
+  font-size: 2rem;
+  color: #0f62fe;
+  margin-bottom: 1rem;
+}
+
+#professional-challenges img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+#professional-challenges p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+  background-color: #0f62fe;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer .dio-logo {
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .modules-list {
+    padding: 0 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  #transform-world {
+    font-size: 1.5rem;
+  }
+}
